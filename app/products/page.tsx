@@ -1,7 +1,7 @@
 export default function Page() {
     const users = [
         { id: 1, name: 'Dana' },
-        { id: 2, name: 'Banana' },
+        { id: 2, name: 'Banana'  },
     ];
     return (
         <main>

@@ -1,15 +1,8 @@
 import TaskList from '@/components/TaskList/TaskList'
-
-type Todo = {
-    userId: number
-    id: number
-    title: string
-    completed: boolean
-}
+import { getTasks } from '@/app/library/data'
 
 export default async function TasksPage() {
-    const res = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=10')
-    const todos: Todo[] = await res.json()
+    const todos = await getTasks()
 
     return (
         <main style={{ maxWidth: 700, margin: '40px auto', padding: '0 20px' }}>

@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Catalog",
+    "about": "About"
+  },
+  "home": {
+    "title": "Hey, {{name}}! ",
+    "subtitle": "Laboratory No. 7 on Next.js. Switch the language in the top right.",
+    "itemsInCart": "{{count}} item in cart",
+    "itemsInCart_other": "{{count}} items in cart",
+    "viewProducts": "Browse catalog",
+    "learnMore": "Learn more"
+  },
+  "products": {
+    "title": "Product Catalog",
+    "subtitle": "The best tech at great prices",
+    "price": "${{price}}",
+    "inStock": "{{count}} in stock",
+    "inStock_one": "{{count}} in stock",
+    "inStock_other": "{{count}} in stock",
+    "outOfStock": "Out of stock",
+    "addToCart": "Add to cart",
+    "addToWishlist": "Add to wishlist",
+    "viewDetails": "View details",
+    "backToList": "Back to catalog",
+    "notFound": "Product not found"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "madeWith": "Made <heart> \uD83D\uDE02</heart> using Next.js"
+  }
+}

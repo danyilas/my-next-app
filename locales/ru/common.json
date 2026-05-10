@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "home": "Главная",
+    "products": "Каталог",
+    "about": "О нас"
+  },
+  "home": {
+    "title": "Привет, {{name}}!",
+    "subtitle": "Лабораторная №7 на Next.js. Переключите язык в правом углу.",
+    "itemsInCart": "{{count}} товар в корзине",
+    "itemsInCart_few": "{{count}} товара в корзине",
+    "itemsInCart_many": "{{count}} товаров в корзине",
+    "itemsInCart_other": "{{count}} товаров в корзине",
+    "viewProducts": "Смотреть каталог",
+    "learnMore": "Подробнее"
+  },
+  "products": {
+    "title": "Каталог товаров",
+    "subtitle": "Лучшая техника по отличным ценам",
+    "price": "{{price}} ₽",
+    "inStock": "{{count}} шт.",
+    "inStock_one": "{{count}} шт.",
+    "inStock_few": "{{count}} шт.",
+    "inStock_many": "{{count}} шт.",
+    "outOfStock": "Нет в наличии",
+    "addToCart": "В корзину",
+    "addToWishlist": "В избранное",
+    "viewDetails": "Подробнее",
+    "backToList": "Назад к каталогу",
+    "notFound": "Товар не найден"
+  },
+  "footer": {
+    "rights": "Все права защищены.",
+    "madeWith": "Сделано <heart>\uD83D\uDE02</heart> на Next.js"
+  }
+}

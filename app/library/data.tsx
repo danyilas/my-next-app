@@ -1,24 +1,12 @@
-import { cache } from 'react'
-import { cacheLife, cacheTag } from 'next/cache'
+import * as yup from 'yup';
 
-export type Todo = {
-    userId: number
-    id: number
-    title: string
-    completed: boolean
-}
-
-export async function getTasks(): Promise<Todo[]> {
-    'use cache'
-    cacheLife('hours')
-    cacheTag('tasks')
-
-    const res = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=10')
-    return res.json()
-}
-
-export const getPost = cache(async (id: string) => {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
-    if (!res.ok) throw new Error('Failed to fetch post')
-    return res.json()
-})
+export const regRules = yup.object({
+    user_name: yup.string().min(3, 'Минимум 3 символа').required('Имя обязательно'),
+    email: yup.string().email('Некорректный email').required('Email обязателен'),
+    age: yup.number().positive().integer().min(18, 'Минимум 18 лет').required('Возраст обязателен'),
+    password: yup.string().min(6, 'Минимум 6 символов').required('Пароль обязателен'),
+    confirm_password: yup
+        .string()
+        .oneOf([yup.ref('password'), undefined], 'Пароли не совпадают')
+        .required('Подтвердите пароль'),
+}).required();
